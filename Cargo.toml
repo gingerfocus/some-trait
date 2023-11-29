@@ -1,0 +1,9 @@
+cargo-features = ["test-dummy-unstable"]
+
+[package]
+name = "fallible-iter-ext"
+version = "0.1.5"
+edition = "2021"
+im-a-teapot = true
+
+[dependencies]
