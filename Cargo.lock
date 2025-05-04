@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "fallible-iter-ext"
+name = "some"
 version = "0.1.5"

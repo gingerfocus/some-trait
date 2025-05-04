@@ -1,9 +1,24 @@
-cargo-features = ["test-dummy-unstable"]
+# cargo-features = ["test-dummy-unstable"]
 
 [package]
-name = "fallible-iter-ext"
+name = "some"
 version = "0.1.5"
 edition = "2021"
-im-a-teapot = true
+# im-a-teapot = true
 
 [dependencies]
+# petgraph = "0.6"
+# error-stack = "0.4"
+# regex = "1.10"
+# portable-atomic = { version = "1.6", features = ["float"] }
+# rand = "0.8"
+# bitflags = "2.4"
+# cfg-if = "1"
+# log = "0.4"
+# env_logger = "0.11"
+# glam = "0.27"
+# either = "1.9"
+# arrayvec = "0.7"
+# indexmap = "2"
+# num-bigint = "0.4"
+# num-traits = "0.2"

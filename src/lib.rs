@@ -1,3 +1,20 @@
+#![doc = include_str!("../README.md")]
+//!
+//! The Rust User Standard Library
+//!
+//! This is an additions to the rust standard library. To
+//! get started add it as a dependency:
+//!
+//! ```toml
+//! [dependencies]
+//! ext = "*"
+//! ```
+//!
+//! At which point you can start coding and get acsess to all the great user
+//! crates of the rust ecosystem. If you are looking for something you will
+//! find that the structure is very similar to the rust standard so try looking
+//! in the same module path and you might find something interesting.
+
 //! A Trait that repersents an iterator that can return None but still yeild
 //! elements in nice way.
 //!
@@ -38,24 +55,28 @@
 //! }
 //! ```
 
-#![no_std]
+// #![no_std]
 #![deny(
     missing_docs,
     missing_debug_implementations,
     rust_2018_idioms,
     unused_imports,
     dead_code,
-    unused_crate_dependencies
+    unused_crate_dependencies,
+    unsafe_code,
+    missing_docs,
+    missing_debug_implementations
 )]
 // #![feature(never_type)]
 // #![forbid(unsafe_code)]
 
-extern crate alloc;
-
 /// An iterator over [`Fallible`]s.
-pub mod iter;
+// pub mod iter;
 /// A collection of useful imports
 pub mod prelude;
+
+/// The module for the some type
+pub mod some;
 
 // /// A sum that repersents both a union between [`Result`] and [`Option`].
 // pub trait FallibleExt<T, E> {
